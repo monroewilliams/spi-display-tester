@@ -33,6 +33,7 @@ void display_begin() {
 #elif 0
 ///////////////////////////////////////////////////////////
 //// GMT130 - 1.3" 240x240 color TFT, SD7789, with NO CHIP SELECT for some reason >:( 
+// https://www.amazon.com/dp/B07P9X3L7M
 #include <Adafruit_ST7789.h>
 Adafruit_ST7789 display(&SPI, -1, DC_PIN, RST_PIN);
 #define DISPLAY_DEPTH 16
@@ -43,6 +44,7 @@ void display_begin() {
 #elif 0
 ///////////////////////////////////////////////////////////
 //// GMT144-10 - 1.4" 128x128 color TFT, ST7735
+// https://www.alibaba.com/product-detail/1-44-inch-TFT-LCD-display_62410646764.html
 #include <Adafruit_ST7735.h>
 Adafruit_ST7735 display(CS_PIN, DC_PIN, RST_PIN);
 #define DISPLAY_DEPTH 16
@@ -52,6 +54,7 @@ void display_begin() {
 #elif 0
 ///////////////////////////////////////////////////////////
 //// 1.14" 135x240 color TFT, SD7789)
+// https://www.amazon.com/dp/B095SY163C
 #include <Adafruit_ST7789.h>
 Adafruit_ST7789 display(&SPI, CS_PIN, DC_PIN, RST_PIN);
 #define DISPLAY_DEPTH 16
@@ -74,7 +77,7 @@ void display_begin() {
 #elif 0
 ///////////////////////////////////////////////////////////
 //// 3.12" 256x64 4 bit grayscale OLED, SSD1322
-// 
+// https://www.amazon.com/dp/B09NVJWN7G
 #include <Adafruit_SSD1322.h>
 Adafruit_SSD1322 display(&SPI, DC_PIN, RST_PIN, CS_PIN);
 #define DISPLAY_DEPTH 4
@@ -85,7 +88,7 @@ void display_begin() {
 #elif 0
 ///////////////////////////////////////////////////////////
 //// 2.08" 256x64 4 bit grayscale OLED, SSH1122
-// 
+// https://www.alibaba.com/product-detail/2-08-inch-OLED-display-module_62427607341.html
 #include <Adafruit_SSD1322.h>
 Adafruit_SSD1322 display(&SPI, DC_PIN, RST_PIN, CS_PIN, Adafruit_SSD1322::VARIANT_SSH1122);
 #define DISPLAY_DEPTH 4
