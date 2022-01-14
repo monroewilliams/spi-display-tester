@@ -96,6 +96,16 @@ Adafruit_SSD1322 display(&SPI, DC_PIN, RST_PIN, CS_PIN, Adafruit_SSD1322::VARIAN
 void display_begin() {
   display.begin();
 }
+#elif 0
+///////////////////////////////////////////////////////////
+//// 1.5" 128x128 16 bit color OLED, SSD1351
+// https://www.amazon.com/dp/B07DBXMFSN
+#include <Adafruit_SSD1351.h>
+Adafruit_SSD1351 display(128, 128, &SPI, CS_PIN, DC_PIN, RST_PIN);
+#define DISPLAY_DEPTH 16
+void display_begin() {
+  display.begin();
+}
 #endif
 
 #if DISPLAY_DEPTH == 16
